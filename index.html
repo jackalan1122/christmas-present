@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas, My Sweet Hwon ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: white;
+            font-size: 1em;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: fadeIn 1s ease-in;
+            margin: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+                width: 95%;
+                margin: 10px;
+                border-radius: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                border-radius: 15px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .gift-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            color: #c41e3a;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7em;
+            }
+        }
+
+        .message {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .message {
+                font-size: 1.1em;
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message {
+                font-size: 1em;
+            }
+        }
+
+        .heart-container {
+            margin: 30px 0;
+        }
+
+        .heart {
+            display: inline-block;
+            font-size: 30px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            margin: 0 5px;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        .reveal-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            padding: 18px 45px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .reveal-btn {
+                padding: 16px 35px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reveal-btn {
+                padding: 14px 30px;
+                font-size: 1em;
+            }
+        }
+
+        .reveal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(245, 87, 108, 0.5);
+        }
+
+        .reveal-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 20px;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hidden-message h2 {
+            color: #c41e3a;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .hidden-message p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gift-icon">🎁</div>
+        <h1>Merry Christmas, My Sweet Hwon!</h1>
+        
+        <div class="message">
+            This Christmas, I wanted to give you something special...
+            Not just a gift, but a reminder of how much you mean to me.
+        </div>
+
+        <div class="heart-container">
+            <span class="heart">❤️</span>
+            <span class="heart" style="animation-delay: 0.2s;">❤️</span>
+            <span class="heart" style="animation-delay: 0.4s;">❤️</span>
+        </div>
+
+        <button class="reveal-btn" onclick="revealMessage()">Click to Reveal Your Surprise! ✨</button>
+
+        <div class="hidden-message" id="hiddenMessage">
+            <h2>You Are My Everything 💝</h2>
+            <p>
+                Every moment with you is a gift. Your smile lights up my world, 
+                your laugh is my favorite sound, and your love is the greatest 
+                blessing I could ever receive. This Christmas and always, 
+                I'm grateful for you. Here's to many more magical moments together!
+            </p>
+            <div style="margin-top: 20px; font-size: 1.3em;">
+                Forever Yours, With All My Love 💕
+            </div>
+        </div>
+
+        <div class="footer">
+            Made with love, just for you ✨
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const msg = document.getElementById('hiddenMessage');
+            const btn = document.querySelector('.reveal-btn');
+            
+            msg.style.display = 'block';
+            btn.style.display = 'none';
+        }
+
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = '❄';
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+            
+            document.body.appendChild(snowflake);
+            
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 300);
+    </script>
+</body>
+</html>
